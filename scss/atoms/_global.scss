@@ -1,0 +1,77 @@
+$primary-color: #f15a24;
+$secondary-color:#4e4b66;
+$heading-color: #1a1a1a; 
+
+* {
+    margin:0; /* resetinami narsykles defaultiniai stiliai */
+    padding:0;
+    box-sizing: border-box; /* turini sutalpina i konteineri, neisplecia virs jei yra paddingas ar borderis */
+}
+
+body {
+    font-family: "Roboto";
+    font-size: 16px;
+    color: $secondary-color;
+    line-height: 24px;
+}   
+
+h1 {
+    font-size: 39px;
+    line-height: 47px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+h1, h3 {
+    color: $heading-color;
+}
+
+a {
+    display: inline-block; /* kad atsistumtu a nuo teksto */
+    text-decoration: none; /* nuima linko linija apacioje */
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    color: #fff;
+    line-height: 19px;
+    font-weight: 700;
+    padding: 16px 32px 16px 32px;
+
+    transition: background-color 0.4s;
+
+    &:hover {
+        background-color: $secondary-color;
+    }
+}
+
+.burger {
+    background-color: $primary-color;
+    width: 56px;
+    height: 56px;
+    border-radius: 4px;
+    padding: 12px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    cursor: pointer; /* kad butu rankute kai uzeina */
+
+    transition: background-color 0.4s;
+
+    &:hover {
+        background-color: $secondary-color;
+    }
+
+    &__line { /* burger__line klases stilius */
+        height: 3px;
+        background-color: #fff;
+        border-radius: 4px;
+        flex: 0 0 3px;
+    }
+
+}
